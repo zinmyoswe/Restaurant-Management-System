@@ -22,7 +22,7 @@
             <div class="card h-100">
               <!-- Header -->
               <div class="card-header">
-                <h5 class="card-header-title">Manage Table</h5>
+                <h5 class="card-header-title">Add Categories</h5>
 
                 <!-- Unfold -->
                 <div class="hs-unfold">

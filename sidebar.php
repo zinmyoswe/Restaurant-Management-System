@@ -196,6 +196,118 @@
           </li>
         <!--   ------------------------- Manage Staff end ----------------------- -->
 
+         <!--   ------------------------- Manage Categories start ----------------------- -->
+<li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+
+              <i class="fal fa-box nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Categories </span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="view_categories.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">View Categories</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add_categories.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Add Categories </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+        <!--   ------------------------- Manage Categories end ----------------------- -->
+
+         <!--   ------------------------- Manage Supplier start ----------------------- -->
+<li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+
+              <i class="fal fa-people-carry nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Supplier </span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="view_supplier.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">View Supplier</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add_supplier.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Add Supplier </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+        <!--   ------------------------- Manage Supplier end ----------------------- -->
+
+        <!--   ------------------------- Manage Coupon and Discount start ----------------------- -->
+<li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+
+              <i class="fal fa-percent nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Coupon & Discount </span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="view_coupon.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">View Coupon & Discount</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add_coupon.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Add Coupon & Discount </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+        <!--   ------------------------- Manage Coupon and Discount end ----------------------- -->
+
+        <!--   ------------------------- Manage Report start ----------------------- -->
+<li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+
+              <i class="fal fa-file-pdf nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Report </span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="view_sale_report.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Sale Report</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="view_supplier_report.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Supplier Report </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+        <!--   ------------------------- Manage Report end ----------------------- -->
+
 
         
           <!-- Pages -->

@@ -7,8 +7,8 @@
         
         
           <a class="navbar-brand" href="./index.html" aria-label="Front">
-            <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo">
-            <img class="navbar-brand-logo-mini" src="./assets/svg/logos/logo-short.svg" alt="Logo">
+            <img class="navbar-brand-logo" src="https://htmlstream.com/front-dashboard/assets/svg/logos/logo.svg" alt="Logo">
+            <img class="navbar-brand-logo-mini" src="https://htmlstream.com/front-dashboard/assets/svg/logos/logo-short.svg" alt="Logo">
           </a>
         
         <!-- End Logo -->
@@ -26,20 +26,22 @@
           <!-- Dashboards -->
           <li class="navbar-vertical-aside-has-menu show">
             <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle active" href="javascript:;" title="Dashboards">
-              <i class="tio-home-vs-1-outlined nav-icon"></i>
+
+              <i class="fal fa-home nav-icon"></i>
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Dashboards</span>
             </a>
 
             <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: block;">
               <li class="nav-item">
                 <a class="nav-link active" href="./index.html" title="Default">
-                  <span class="tio-circle nav-indicator-icon"></span>
+                  <span class="fas fa-circle nav-indicator-icon"></span>
                   <span class="text-truncate">Default</span>
                 </a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link " href="./dashboard-alternative.html" title="Alternative">
-                  <span class="tio-circle nav-indicator-icon"></span>
+                  <span class="fas fa-circle nav-indicator-icon"></span>
                   <span class="text-truncate">Alternative</span>
                 </a>
               </li>
@@ -52,10 +54,155 @@
             <small class="tio-more-horizontal nav-subtitle-replacer"></small>
           </li>
 
+       <!--   ------------------------- Manage table start ----------------------- -->
+ 
+          <li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+
+              <i class="fal fa-burger-soda nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Table <span class="badge badge-info badge-pill ml-1">4</span></span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="view_table.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">View Table</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add_table.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Add Table </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+         
+        <!--   ------------------------- Manage table end ----------------------- -->
+
+        <!--   ------------------------- Manage Food start ----------------------- -->
+<li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+
+              <i class="fal fa-soup nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Food <span class="badge badge-info badge-pill ml-1">12</span></span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="view_food.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">View Food</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add_food.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Add Food </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+        <!--   ------------------------- Manage Food end ----------------------- -->
+
+         <!--   ------------------------- Manage Drink start ----------------------- -->
+<li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+
+              <i class="fal fa-glass-citrus nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Drink <span class="badge badge-info badge-pill ml-1">13</span></span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="view_drink.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">View Drink</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add_drink.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Add Drink </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+        <!--   ------------------------- Manage Drink end ----------------------- -->
+
+         <!--   ------------------------- Manage Order start ----------------------- -->
+<li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+              <i class="fal fa-shopping-bag nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Order </span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="manage_order.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Manage Order</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Pending Order </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+        <!--   ------------------------- Manage Order end ----------------------- -->
+        
+
+         <!--   ------------------------- Manage Staff start ----------------------- -->
+<li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+
+              <i class="fal fa-users nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Staff </span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="view_staff.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">View Staff</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add_staff.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Add Staff </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+        <!--   ------------------------- Manage Staff end ----------------------- -->
+
+
+        
           <!-- Pages -->
           <li class="navbar-vertical-aside-has-menu ">
             <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Pages">
-              <i class="tio-pages-outlined nav-icon"></i>
+
+              <i class="fal fa-file nav-icon"></i>
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Pages</span>
             </a>
 

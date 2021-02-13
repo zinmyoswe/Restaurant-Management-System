@@ -61,93 +61,60 @@
 
               <!-- Body -->
               <div class="card-body">
-                <p>See and talk to your users and leads immediately by importing your data into the Front Dashboard platform.</p>
+                 
 
-                <ul class="list-group list-group-flush list-group-no-gutters">
-                  <li class="list-group-item py-3">
-                    <h5 class="modal-title">Import users from:</h5>
-                  </li>
+  <?php
+          if(isset($_POST['cat'])){
+            $name = $_POST['name'];
+            $menu = $_POST['menu'];
+  
+            if($name == null){
+                  echo '  <div class="alert alert-danger">
+        <i class="fa fa-exclamation-triangle"> </i> Categories Name Required!
+        </div>';
+                }else{
+      $query = $conn->query("INSERT INTO categories(cat_name,menu,created_date,modified_date)
+      VALUES ('$name','$menu',NOW(),NOW())");
+          ?>
+      
 
-                  <!-- List Group Item -->
-                  <li class="list-group-item py-3">
-                    <div class="media">
-                      <div class="mt-1 mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/capsule.svg" alt="Image Description">
-                      </div>
-                      <div class="media-body">
-                        <div class="row align-items-center">
-                          <div class="col">
-                            <h5 class="mb-0">Capsule</h5>
-                            <span class="d-block font-size-sm">Users</span>
-                          </div>
+          <?php
+               
+                
 
-                          <div class="col-auto">
-                            <a class="btn btn-sm btn-primary" href="#" title="Launch importer" target="_blank">
-                              Launch <span class="d-none d-sm-inline-block">importer</span>
-                              <i class="tio-open-in-new ml-1"></i>
-                            </a>
-                          </div>
-                        </div>
-                        <!-- End Row -->
-                      </div>
-                    </div>
-                  </li>
-                  <!-- End List Group Item -->
+             if($query){
 
-                  <!-- List Group Item -->
-                  <li class="list-group-item py-3">
-                    <div class="media">
-                      <div class="mt-1 mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/mailchimp.svg" alt="Image Description">
-                      </div>
-                      <div class="media-body">
-                        <div class="row align-items-center">
-                          <div class="col">
-                            <h5 class="mb-0">Mailchimp</h5>
-                            <span class="d-block font-size-sm">Users</span>
-                          </div>
+        //           echo '  <div class="alert alert-success">
+        // <i class="fa fa-check-circle-o"> </i> Category Added Successfully
+        // </div>';
+  
+        echo "<script>window.open('view_categories.php?w2=success','_self')</script>";
+                  }
+                }
+                }
 
-                          <div class="col-auto">
-                            <a class="btn btn-sm btn-primary" href="#" title="Launch importer" target="_blank">
-                              Launch <span class="d-none d-sm-inline-block">importer</span>
-                              <i class="tio-open-in-new ml-1"></i>
-                            </a>
-                          </div>
-                        </div>
-                        <!-- End Row -->
-                      </div>
-                    </div>
-                  </li>
-                  <!-- End List Group Item -->
+      
+          ?>
+ <form method="post" action="" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Category Name</label>
+    <input type="text" name="name" class="form-control" id="exampleInputEmail1"  placeholder="Enter Category Name">
 
-                  <!-- List Group Item -->
-                  <li class="list-group-item py-3">
-                    <div class="media">
-                      <div class="mt-1 mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/google-webdev.svg" alt="Image Description">
-                      </div>
-                      <div class="media-body">
-                        <div class="row align-items-center">
-                          <div class="col">
-                            <h5 class="mb-0">Webdev</h5>
-                            <span class="d-block font-size-sm">Users</span>
-                          </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Menu</label>
+    <select class="form-control" name="menu" id="exampleFormControlSelect1">
+      <option>Choose Menu</option>
+      <option value="Food">Food</option>
+      <option value="Drink">Drink</option>
+    
+    </select>
+  </div>
+ 
+  <button type="submit" name="cat" class="btn btn-primary float-right">Save</button>
+  <a href="index.php" class="btn btn-outline-primary float-right md-3">Back</a>
+</form>
 
-                          <div class="col-auto">
-                            <a class="btn btn-sm btn-primary" href="#" title="Launch importer" target="_blank">
-                              Launch <span class="d-none d-sm-inline-block">importer</span>
-                              <i class="tio-open-in-new ml-1"></i>
-                            </a>
-                          </div>
-                        </div>
-                        <!-- End Row -->
-                      </div>
-                    </div>
-                  </li>
-                  <!-- End List Group Item -->
-
-                  <li class="list-group-item"><small>Or you can <a href="#">sync data to Front Dashboard</a> to ensure your data is always up-to-date.</small></li>
-                </ul>
               </div>
               <!-- End Body -->
             </div>

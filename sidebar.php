@@ -1,6 +1,4 @@
 
-  
-
 <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered default navbar-vertical-aside-initialized">
   <div class="navbar-vertical-container">
     <div class="navbar-vertical-footer-offset">
@@ -9,8 +7,8 @@
         
         
           <a class="navbar-brand" href="./index.html" aria-label="Front">
-            <img class="navbar-brand-logo" src="https://htmlstream.com/front-dashboard/assets/svg/logos/logo.svg" alt="Logo">
-            <img class="navbar-brand-logo-mini" src="https://htmlstream.com/front-dashboard/assets/assets/svg/logos/logo-short.svg" alt="Logo">
+            <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo">
+            <img class="navbar-brand-logo-mini" src="./assets/svg/logos/logo-short.svg" alt="Logo">
           </a>
         
         <!-- End Logo -->
@@ -26,16 +24,15 @@
       <div class="navbar-vertical-content">
         <ul class="navbar-nav navbar-nav-lg nav-tabs">
           <!-- Dashboards -->
-          <li class="navbar-vertical-aside-has-menu ">
-            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Dashboards">
-              <i class="far fa-home nav-icon"></i>
+          <li class="navbar-vertical-aside-has-menu show">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle active" href="javascript:;" title="Dashboards">
+              <i class="tio-home-vs-1-outlined nav-icon"></i>
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Dashboards</span>
-             
             </a>
 
-            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: block;">
               <li class="nav-item">
-                <a class="nav-link " href="./index.html" title="Default">
+                <a class="nav-link active" href="./index.html" title="Default">
                   <span class="tio-circle nav-indicator-icon"></span>
                   <span class="text-truncate">Default</span>
                 </a>
@@ -50,45 +47,15 @@
           </li>
           <!-- End Dashboards -->
 
-         
-
           <li class="nav-item">
             <small class="nav-subtitle" title="Pages">Pages</small>
             <small class="tio-more-horizontal nav-subtitle-replacer"></small>
           </li>
 
-           <!-- Pages -->
-          <li class="navbar-vertical-aside-has-menu ">
-            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Pages">
-              <i class="far fa-soup nav-icon"></i>
-              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Table</span>
-            </a>
-
-            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
-
-              <li class="nav-item">
-                <a class="nav-link " href="view_table.php" title="Referrals">
-                  <span class="fas fa-circle nav-indicator-icon"></span>
-                  <span class="text-truncate">View Table</span>
-                </a>
-              </li>
-
-               <li class="nav-item">
-                <a class="nav-link " href="add_table.php" title="Referrals">
-                  <span class="fas fa-circle  nav-indicator-icon"></span>
-                  <span class="text-truncate">Add Table</span>
-                </a>
-              </li>
-
-            </ul>
-          </li>
-          <!-- End Table -->
-
           <!-- Pages -->
           <li class="navbar-vertical-aside-has-menu ">
             <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Pages">
-
-              <i class="far fa-file nav-icon"></i>
+              <i class="tio-pages-outlined nav-icon"></i>
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Pages</span>
             </a>
 
@@ -552,8 +519,8 @@
           </li>
           <!-- End Authentication -->
 
-          <li class="nav-item active">
-            <a class="js-nav-tooltip-link nav-link active" href="./welcome-page.html" title="" data-placement="left" data-original-title="Welcome page">
+          <li class="nav-item ">
+            <a class="js-nav-tooltip-link nav-link " href="./welcome-page.html" title="" data-placement="left" data-original-title="Welcome page">
               <i class="tio-visible-outlined nav-icon"></i>
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Welcome Page</span>
             </a>
@@ -656,44 +623,44 @@
           <!-- Language -->
           <li class="navbar-vertical-aside-has-menu nav-footer-item ">
             <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Language">
-              <img class="avatar avatar-xss avatar-circle" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
+              <img class="avatar avatar-xss avatar-circle" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Language</span>
             </a>
 
             <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
               <li class="nav-item">
                 <a class="nav-link" href="#" title="English (US)">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
                   English (US)
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="English (UK)">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
                   English (UK)
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="Deutsch">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
                   Deutsch
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="Dansk">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
                   Dansk
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="Italiano">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
                   Italiano
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="中文 (繁體)">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
                   中文 (繁體)
                 </a>
               </li>
@@ -774,33 +741,33 @@
                   &quot;animationIn&quot;: &quot;slideInDown&quot;,
                   &quot;hideOnScroll&quot;: true
                  }" data-hs-unfold-target="#languageDropdown" data-hs-unfold-invoker="">
-                <img class="avatar avatar-xss avatar-circle" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
+                <img class="avatar avatar-xss avatar-circle" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
               </a>
 
               <div id="languageDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu navbar-vertical-footer-dropdown hs-unfold-hidden hs-unfold-content-initialized hs-unfold-css-animation animated" data-hs-target-height="262.717" data-hs-unfold-content="" data-hs-unfold-content-animation-in="slideInDown" data-hs-unfold-content-animation-out="fadeOut" style="animation-duration: 300ms;">
                 <span class="dropdown-header">Select language</span>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="English">English (US)</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="English">English (UK)</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="Deutsch">Deutsch</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="Dansk">Dansk</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="Italiano">Italiano</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="中文 (繁體)">中文 (繁體)</span>
                 </a>
               </div>
@@ -812,11 +779,7 @@
       <!-- End Footer -->
     </div>
   </div>
-</aside>
-
-
-<div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div>
-
-<!-- -------------------------------- navbar end ------------------------------------------- -->
-
-   
+</aside><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div>
+    
+      <script src="https://htmlstream.com/front-dashboard/assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    

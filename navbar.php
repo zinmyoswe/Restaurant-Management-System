@@ -1,13 +1,10 @@
-<body class="footer-offset footer-offset has-navbar-vertical-aside navbar-vertical-aside-show-xl">
-
-
-  <header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
-
+<body class="footer-offset footer-offset has-navbar-vertical-aside navbar-vertical-aside-show-xl"><header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
+  <div class="navbar-nav-wrap">
     <div class="navbar-brand-wrapper">
       <!-- Logo -->
       <a class="navbar-brand" href="./index.html" aria-label="Front">
-        <img class="navbar-brand-logo" src="https://htmlstream.com/front-dashboard/assets/svg/logos/logo.svg" alt="Logo">
-        <img class="navbar-brand-logo-mini" src="https://htmlstream.com/front-dashboard/assets/svg/logos/logo-short.svg" alt="Logo">
+        <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo">
+        <img class="navbar-brand-logo-mini" src="./assets/svg/logos/logo-short.svg" alt="Logo">
       </a>
       <!-- End Logo -->
     </div>
@@ -98,7 +95,7 @@
 
               <a class="dropdown-item my-2" href="./index.html">
                 <div class="media align-items-center">
-                  <img class="avatar avatar-xs avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img10.jpg" alt="Image Description">
+                  <img class="avatar avatar-xs avatar-circle mr-2" src="./assets/img/160x160/img10.jpg" alt="Image Description">
                   <div class="media-body text-truncate">
                     <span>Amanda Harvey <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Top endorsed"></i></span>
                   </div>
@@ -107,7 +104,7 @@
 
               <a class="dropdown-item my-2" href="./index.html">
                 <div class="media align-items-center">
-                  <img class="avatar avatar-xs avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img3.jpg" alt="Image Description">
+                  <img class="avatar avatar-xs avatar-circle mr-2" src="./assets/img/160x160/img3.jpg" alt="Image Description">
                   <div class="media-body text-truncate">
                     <span>David Harrison</span>
                   </div>
@@ -237,7 +234,7 @@
                                 <span class="custom-checkbox-list-stretched-bg"></span>
                               </div>
                               <div class="avatar avatar-sm avatar-circle">
-                                <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img3.jpg" alt="Image Description">
+                                <img class="avatar-img" src="./assets/img/160x160/img3.jpg" alt="Image Description">
                               </div>
                             </div>
                           </div>
@@ -290,7 +287,7 @@
                                 <span class="custom-checkbox-list-stretched-bg"></span>
                               </div>
                               <div class="avatar avatar-sm avatar-circle">
-                                <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img10.jpg" alt="Image Description">
+                                <img class="avatar-img" src="./assets/img/160x160/img10.jpg" alt="Image Description">
                               </div>
                             </div>
                           </div>
@@ -315,7 +312,7 @@
                                 <span class="custom-checkbox-list-stretched-bg"></span>
                               </div>
                               <div class="avatar avatar-sm avatar-circle">
-                                <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/svg/brands/google.svg" alt="Image Description">
+                                <img class="avatar-img" src="./assets/svg/brands/google.svg" alt="Image Description">
                               </div>
                             </div>
                           </div>
@@ -340,7 +337,7 @@
                                 <span class="custom-checkbox-list-stretched-bg"></span>
                               </div>
                               <div class="avatar avatar-sm avatar-circle">
-                                <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img7.jpg" alt="Image Description">
+                                <img class="avatar-img" src="./assets/img/160x160/img7.jpg" alt="Image Description">
                               </div>
                             </div>
                           </div>
@@ -394,7 +391,7 @@
                                 <span class="custom-checkbox-list-stretched-bg"></span>
                               </div>
                               <div class="avatar avatar-sm avatar-circle">
-                                <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img5.jpg" alt="Image Description">
+                                <img class="avatar-img" src="./assets/img/160x160/img5.jpg" alt="Image Description">
                               </div>
                             </div>
                           </div>
@@ -444,7 +441,7 @@
                                 <span class="custom-checkbox-list-stretched-bg"></span>
                               </div>
                               <div class="avatar avatar-sm avatar-circle">
-                                <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img8.jpg" alt="Image Description">
+                                <img class="avatar-img" src="./assets/img/160x160/img8.jpg" alt="Image Description">
                               </div>
                             </div>
                           </div>
@@ -524,7 +521,7 @@
                   <a class="nav-link" href="#">
                     <div class="media align-items-center">
                       <span class="mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="https://htmlstream.com/front-dashboard/assets/svg/brands/atlassian.svg" alt="Image Description">
+                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/atlassian.svg" alt="Image Description">
                       </span>
                       <div class="media-body text-truncate">
                         <span class="h5 mb-0">Atlassian</span>
@@ -536,7 +533,7 @@
                   <a class="nav-link" href="#">
                     <div class="media align-items-center">
                       <span class="mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="https://htmlstream.com/front-dashboard/assets/svg/brands/slack.svg" alt="Image Description">
+                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/slack.svg" alt="Image Description">
                       </span>
                       <div class="media-body text-truncate">
                         <span class="h5 mb-0">Slack <span class="badge badge-primary badge-pill text-uppercase ml-1">Try</span></span>
@@ -548,7 +545,7 @@
                   <a class="nav-link" href="#">
                     <div class="media align-items-center">
                       <span class="mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="https://htmlstream.com/front-dashboard/assets/svg/brands/google-webdev.svg" alt="Image Description">
+                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/google-webdev.svg" alt="Image Description">
                       </span>
                       <div class="media-body text-truncate">
                         <span class="h5 mb-0">Google webdev</span>
@@ -560,7 +557,7 @@
                   <a class="nav-link" href="#">
                     <div class="media align-items-center">
                       <span class="mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="https://htmlstream.com/front-dashboard/assets/svg/brands/frontapp.svg" alt="Image Description">
+                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/frontapp.svg" alt="Image Description">
                       </span>
                       <div class="media-body text-truncate">
                         <span class="h5 mb-0">Frontapp</span>
@@ -572,7 +569,7 @@
                   <a class="nav-link" href="#">
                     <div class="media align-items-center">
                       <span class="mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="https://htmlstream.com/front-dashboard/assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
+                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/illustrations/review-rating-shield.svg" alt="Image Description">
                       </span>
                       <div class="media-body text-truncate">
                         <span class="h5 mb-0">HS Support</span>
@@ -633,7 +630,7 @@
                  &quot;type&quot;: &quot;css-animation&quot;
                }" data-hs-unfold-target="#accountNavbarDropdown" data-hs-unfold-invoker="">
               <div class="avatar avatar-sm avatar-circle">
-                <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img6.jpg" alt="Image Description">
+                <img class="avatar-img" src="./assets/img/160x160/img6.jpg" alt="Image Description">
                 <span class="avatar-status avatar-sm-status avatar-status-success"></span>
               </div>
             </a>
@@ -642,7 +639,7 @@
               <div class="dropdown-item-text">
                 <div class="media align-items-center">
                   <div class="avatar avatar-sm avatar-circle mr-2">
-                    <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img6.jpg" alt="Image Description">
+                    <img class="avatar-img" src="./assets/img/160x160/img6.jpg" alt="Image Description">
                   </div>
                   <div class="media-body">
                     <span class="card-title h5">Mark Williams</span>
@@ -751,5 +748,5 @@
       <!-- End Navbar -->
     </div>
     <!-- End Secondary Content -->
-  
+  </div>
 </header>

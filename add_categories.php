@@ -73,15 +73,13 @@
         <i class="fa fa-exclamation-triangle"> </i> Categories Name Required!
         </div>';
                 }else{
-      $query = $conn->query("INSERT INTO categories(cat_name,menu,created_date,modified_date)
+      $query = $conn->query("INSERT INTO categories(cat_name,menu_id,created_date,modified_date)
       VALUES ('$name','$menu',NOW(),NOW())");
           ?>
       
 
           <?php
                
-                
-
              if($query){
 
         //           echo '  <div class="alert alert-success">
@@ -92,8 +90,6 @@
                   }
                 }
                 }
-
-      
           ?>
  <form method="post" action="" enctype="multipart/form-data">
   <div class="form-group">

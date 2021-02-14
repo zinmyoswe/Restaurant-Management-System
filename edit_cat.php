@@ -6,6 +6,9 @@
   include('navbar.php');
   include('sidebar.php');
 
+  $id = $_GET['id'];
+  $result = mysqli_query($conn,"SELECT * FROM categories WHERE cat_id=$id ");
+  $row = mysqli_fetch_assoc($result);
 ?>
 
     <main id="content" role="main" class="main">
@@ -22,7 +25,7 @@
             <div class="card h-100">
               <!-- Header -->
               <div class="card-header">
-                <h5 class="card-header-title">Add Categories</h5>
+                <h5 class="card-header-title">Edit Categories</h5>
 
                 <!-- Unfold -->
                 <div class="hs-unfold">
@@ -95,28 +98,34 @@
 
       
           ?>
- <form method="post" action="" enctype="multipart/form-data">
+ <form method="update-cat.php" action="" enctype="multipart/form-data">
+
+  <input type="hidden" name="id" value="<?php echo $row['cat_id']?>">
+
   <div class="form-group">
     <label for="exampleInputEmail1">Category Name</label>
-    <input type="text" name="name" class="form-control" id="exampleInputEmail1"  placeholder="Enter Category Name">
+    <input type="text" name="name" class="form-control" id="exampleInputEmail1"  value="<?php echo $row['cat_name']?>">
 
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Menu</label>
     <select class="form-control" name="menu" id="exampleFormControlSelect1">
-      <option value="0">Choose Menu</option>
+
+      <option>Choose Menu</option>
       <?php 
          include('confs/config.php');
-         $sql = mysqli_query($conn,"SELECT * from menu");
-         while($row = mysqli_fetch_assoc($sql)):
+         $menu = mysqli_query($conn,"SELECT * from menu");
+         while($mm = mysqli_fetch_assoc($menu)):
       ?>
-      <option value="<?php echo $row['menu_id'] ?>"><?php echo $row['menu_name'] ?></option>
+      <option value="<?php echo $mm['menu_id'] ?>"
+        <?php if($mm['menu_id'] ==$row['menu_id']) echo "selected" ?>>
+        <?php echo $mm['menu_name'] ?></option>
       <?php endwhile; ?>
     </select>
   </div>
  
-  <button type="submit" name="cat" class="btn btn-primary float-right">Save</button>
-  <a href="index.php" class="btn btn-outline-primary float-right md-3">Back</a>
+  <input type="submit" value="Update" class="btn btn-dark float-right">
+  <a href="view_categories.php" class="btn btn-outline-dark float-right md-3">Back</a>
 </form>
 
               </div>

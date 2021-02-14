@@ -122,7 +122,7 @@ Toast.fire({
                     <th>No</th>
                     <th>Name</th>
                     <th>Menu</th>
-                     <th>Created Date</th>
+                     <th>Created/Modified Date</th>
                       <th>Created/Modified By</th>
                        <th></th>
                 </tr>
@@ -130,7 +130,10 @@ Toast.fire({
 
 
                 <?php 
-                $query = "SELECT * FROM categories order by cat_id desc";
+                $query = "SELECT c.*,m.menu_id,m.menu_name FROM categories c
+                LEFT JOIN menu m 
+                ON c.menu_id = m.menu_id
+                order by c.cat_id desc";
                 $result = mysqli_query($conn,$query);
 
                 $count = 1;
@@ -138,6 +141,7 @@ Toast.fire({
                     $id = $row['cat_id'];
                     $cat_name = $row['cat_name'];
                     $menu = $row['menu'];
+                    $menu_name = $row['menu_name'];
                     $created_date = $row['created_date'];
 
                 ?>
@@ -145,11 +149,11 @@ Toast.fire({
                     <tr>
                         <td align='center'><?= $count ?></td>
                         <td><a href='<?= $created_date ?>' target='_blank'><?= $cat_name ?></a></td>
-                        <td><?= $menu ?></td>
+                        <td><?= $menu_name ?></td>
                         <td><i class="fal fa-alarm-clock"></i> <?= $created_date ?></td>
                         <td></td>
                         <td align='center'>
-                            <a href="cat-edit.php?id=<?php echo $row['cat_id']?>" class="btn btn-outline-primary">Edit</a>
+                            <a href="edit_cat.php?id=<?php echo $row['cat_id']?>" class="btn btn-outline-primary">Edit</a>
 
                        
 

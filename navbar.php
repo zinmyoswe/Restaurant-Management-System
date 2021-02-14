@@ -3,8 +3,8 @@
     <div class="navbar-brand-wrapper">
       <!-- Logo -->
       <a class="navbar-brand" href="./index.html" aria-label="Front">
-        <img class="navbar-brand-logo" src="./assets/svg/logos/logo.svg" alt="Logo">
-        <img class="navbar-brand-logo-mini" src="./assets/svg/logos/logo-short.svg" alt="Logo">
+        <img class="navbar-brand-logo" src="https://htmlstream.com/front-dashboard/assets/svg/logos/logo.svg" alt="Logo">
+        <img class="navbar-brand-logo-mini" src="https://htmlstream.com/front-dashboard/assets/svg/logos/logo-short.svg" alt="Logo">
       </a>
       <!-- End Logo -->
     </div>
@@ -12,8 +12,10 @@
     <div class="navbar-nav-wrap-content-left">
       <!-- Navbar Vertical Toggle -->
       <button type="button" class="js-navbar-vertical-aside-toggle-invoker close mr-3">
-        <i class="tio-first-page navbar-vertical-aside-toggle-short-align" data-toggle="tooltip" data-placement="right" title="" data-original-title="Collapse"></i>
-        <i class="tio-last-page navbar-vertical-aside-toggle-full-align" data-template="<div class=&quot;tooltip d-none d-sm-block&quot; role=&quot;tooltip&quot;><div class=&quot;arrow&quot;></div><div class=&quot;tooltip-inner&quot;></div></div>" data-toggle="tooltip" data-placement="right" title="" data-original-title="Expand"></i>
+
+      
+        <i class="fal fa-arrow-to-left navbar-vertical-aside-toggle-short-align" data-toggle="tooltip" data-placement="right" title="" data-original-title="Collapse"></i>
+        <i class="fal fa-arrow-to-right navbar-vertical-aside-toggle-full-align" data-template="<div class=&quot;tooltip d-none d-sm-block&quot; role=&quot;tooltip&quot;><div class=&quot;arrow&quot;></div><div class=&quot;tooltip-inner&quot;></div></div>" data-toggle="tooltip" data-placement="right" title="" data-original-title="Expand"></i>
       </button>
       <!-- End Navbar Vertical Toggle -->
 
@@ -24,7 +26,7 @@
           <div class="input-group input-group-merge input-group-borderless input-group-hover-light navbar-input-group">
             <div class="input-group-prepend">
               <div class="input-group-text">
-                <i class="tio-search"></i>
+                <i class="fal fa-search"></i>
               </div>
             </div>
             <input class="js-form-search form-control" placeholder="Search in front" aria-label="Search in front" data-hs-form-search-options="{
@@ -36,7 +38,7 @@
                    }" type="search">
             <a class="input-group-append" href="javascript:;">
               <span class="input-group-text">
-                <i id="clearSearchResultsIcon" class="tio-clear" style="display: none;"></i>
+                <i id="clearSearchResultsIcon" class="fal fa-clear" style="display: none;"></i>
               </span>
             </a>
           </div>
@@ -164,7 +166,7 @@
                  &quot;target&quot;: &quot;#notificationDropdown&quot;,
                  &quot;type&quot;: &quot;css-animation&quot;
                }" data-hs-unfold-target="#notificationDropdown" data-hs-unfold-invoker="">
-              <i class="tio-notifications-on-outlined"></i>
+              <i class="fal fa-bell"></i>
               <span class="btn-status btn-sm-status btn-status-danger"></span>
             </a>
 

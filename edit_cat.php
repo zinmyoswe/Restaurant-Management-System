@@ -98,7 +98,7 @@
 
       
           ?>
- <form method="update-cat.php" action="" enctype="multipart/form-data">
+ <form method="POST" action="update_cat.php" enctype="multipart/form-data">
 
   <input type="hidden" name="id" value="<?php echo $row['cat_id']?>">
 

@@ -66,38 +66,6 @@
               <div class="card-body">
                  
 
-  <?php
-          if(isset($_POST['cat'])){
-            $name = $_POST['name'];
-            $menu = $_POST['menu'];
-  
-            if($name == null){
-                  echo '  <div class="alert alert-danger">
-        <i class="fa fa-exclamation-triangle"> </i> Categories Name Required!
-        </div>';
-                }else{
-      $query = $conn->query("INSERT INTO categories(cat_name,menu,created_date,modified_date)
-      VALUES ('$name','$menu',NOW(),NOW())");
-          ?>
-      
-
-          <?php
-               
-                
-
-             if($query){
-
-        //           echo '  <div class="alert alert-success">
-        // <i class="fa fa-check-circle-o"> </i> Category Added Successfully
-        // </div>';
-  
-        echo "<script>window.open('view_categories.php?w2=success','_self')</script>";
-                  }
-                }
-                }
-
-      
-          ?>
  <form method="POST" action="update_cat.php" enctype="multipart/form-data">
 
   <input type="hidden" name="id" value="<?php echo $row['cat_id']?>">

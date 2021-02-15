@@ -173,7 +173,7 @@ Toast.fire({
                            <td><img src="cover/<?php echo $row['cover'] ?>" width="200"></td>
                        
                         <td align='center' width="200">
-                            <a href="edit_cat.php?id=<?php echo $row['food_id']?>" class="btn btn-outline-primary">Edit</a>
+                            <a href="edit_food.php?id=<?php echo $row['food_id']?>" class="btn btn-outline-primary">Edit</a>
                        
 
                             <button class='delete btn btn-outline-dark' id='del_<?= $id ?>' data-id='<?= $id ?>'>Delete</button>

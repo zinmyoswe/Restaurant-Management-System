@@ -6,7 +6,7 @@
         <!-- Logo -->
         
         
-          <a class="navbar-brand" href="./index.html" aria-label="Front">
+          <a class="navbar-brand" href="index.php" aria-label="Front">
             <img class="navbar-brand-logo" src="https://htmlstream.com/front-dashboard/assets/svg/logos/logo.svg" alt="Logo">
             <img class="navbar-brand-logo-mini" src="https://htmlstream.com/front-dashboard/assets/svg/logos/logo-short.svg" alt="Logo">
           </a>
@@ -301,6 +301,20 @@
                 <a class="nav-link " href="view_supplier_report.php" title="Calendar">
                   <span class="fas fa-circle nav-indicator-icon"></span>
                   <span class="text-truncate">Supplier Report </span>
+                </a>
+              </li>
+
+               <li class="nav-item">
+                <a class="nav-link " href="view_supplier_report.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Top 10 Food Sale Report</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="view_supplier_report.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Top 10 Drink Sale Report</span>
                 </a>
               </li>
              

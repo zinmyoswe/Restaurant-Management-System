@@ -163,7 +163,7 @@
    
     <?php include('footer.php'); ?>
 
-    <script src="jquery.min.js" integrity "sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+   <!--  <script src="jquery.min.js" integrity "sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
 
 <script type="text/javascript">
   $(document).ready(function(){
@@ -229,7 +229,7 @@
       if($run){
 
         // echo "<script>alert('Product has been inserted')</script>";
-        echo "<script>window.open('view_food.phpw2=success','_self')</script>";
+        echo "<script>window.open('view_food.php?w2=success','_self')</script>";
       }
       else{
         echo "error";

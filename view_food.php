@@ -145,9 +145,12 @@ Toast.fire({
                 }
 
                 $start_from = ($page-1) * $per_page;
-                $query = "SELECT f.*,c.cat_id,c.cat_name from food f 
+                $query = "SELECT f.*,c.cat_id,c.cat_name,m.menu_id, m.menu_name from food f 
                 LEFT JOIN categories c 
                 ON c.cat_id = f.category_id
+                LEFT JOIN menu m 
+                ON m.menu_id = f.menu_id 
+                where f.menu_id = 1
                 ORDER BY 1 DESC LIMIT $start_from, $per_page";
                 $result = mysqli_query($conn,$query);
 

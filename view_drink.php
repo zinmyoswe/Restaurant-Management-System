@@ -200,7 +200,7 @@ Toast.fire({
         </style>
         <!-- /.box-body -->
         <div class="card-footer">
-          <?php include("pagination_food.php"); ?>
+          <?php include("pagination_drink.php"); ?>
         </div>
         <!-- /.box-footer-->
               </div>

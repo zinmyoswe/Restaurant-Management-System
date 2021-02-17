@@ -352,6 +352,34 @@
           </li>
         <!--   ------------------------- Manage Main Ingredient end ----------------------- -->
 
+         <!--   ------------------------- Manage Menu ----------------------- -->
+<li class="navbar-vertical-aside-has-menu ">
+            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
+         
+
+
+              <i class="fal fa-book nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate"> Manage Menu </span>
+            </a>
+
+            <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
+              <li class="nav-item">
+                <a class="nav-link " href="view_menu.php" title="Kanban">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">View Menu</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="add_menu.php" title="Calendar">
+                  <span class="fas fa-circle nav-indicator-icon"></span>
+                  <span class="text-truncate">Add Menu </span>
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+        <!--   ------------------------- Manage Menu end ----------------------- -->
+
         
           
 

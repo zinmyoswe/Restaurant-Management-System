@@ -40,9 +40,9 @@ $w2 = $_GET['w2'];
 
 Toast.fire({
   icon: 'success',
-  title: 'Category added successfully'
+  title: 'Ingredient added successfully'
 }).then(function() {
-            window.location = "view_categories.php";
+            window.location = "view_ingredient.php";
         });
  </script>
 <?php } elseif($w2 == 'updated'){ ?>
@@ -52,9 +52,9 @@ Toast.fire({
             Swal.fire({
               icon: 'success',
               title: 'Updated',
-              text: 'Category updated successfully'
+              text: 'Ingredient updated successfully'
             }).then(function() {
-            window.location = "view_categories.php";
+            window.location = "view_ingredient.php";
         });     
                      
           </script>
@@ -74,7 +74,7 @@ Toast.fire({
             <div class="card h-100">
               <!-- Header -->
               <div class="card-header">
-                <h5 class="card-header-title">Manage Categories</h5>
+                <h5 class="card-header-title">Manage Main Ingredient</h5>
 
                 <!-- Unfold -->
                 <div class="hs-unfold">
@@ -113,7 +113,7 @@ Toast.fire({
 
               <!-- Body -->
               <div class="card-body">
-                <a href="add_categories.php" class="btn btn-dark">Add New Category</a>
+                <a href="add_ingredient.php" class="btn btn-dark">Add New Main Ingredient</a>
 
                  <br><br>
 
@@ -121,7 +121,7 @@ Toast.fire({
                 <tr style='background: light; color: black;'>
                     <th>No</th>
                     <th>Name</th>
-                    <th>Menu</th>
+                  
                      <th>Created/Modified Date</th>
                       <th>Created/Modified By</th>
                        <th></th>
@@ -130,30 +130,27 @@ Toast.fire({
 
 
                 <?php 
-                $query = "SELECT c.*,m.menu_id,m.menu_name FROM categories c
-                LEFT JOIN menu m 
-                ON c.menu_id = m.menu_id
-                order by c.cat_id desc";
+                $query = "SELECT * from main_ingredient
+                order by main_ingredient_id desc";
                 $result = mysqli_query($conn,$query);
 
                 $count = 1;
                 while($row = mysqli_fetch_assoc($result) ){
-                    $id = $row['cat_id'];
-                    $cat_name = $row['cat_name'];
-                    $menu = $row['menu'];
-                    $menu_name = $row['menu_name'];
+                    $id = $row['main_ingredient_id'];
+                    $main_ingredient_name = $row['main_ingredient_name'];
+                    
                     $created_date = $row['created_date'];
 
                 ?>
                 
                     <tr>
                         <td align='center'><?= $count ?></td>
-                        <td><a href='<?= $created_date ?>' target='_blank'><?= $cat_name ?></a></td>
-                        <td><?= $menu_name ?></td>
+                        <td><a href='<?= $created_date ?>' target='_blank'><?= $main_ingredient_name ?></a></td>
+                       
                         <td><i class="fal fa-alarm-clock"></i> <?= $created_date ?></td>
                         <td></td>
                         <td align='center'>
-                            <a href="edit_cat.php?id=<?php echo $row['cat_id']?>" class="btn btn-outline-primary">Edit</a>
+                            <a href="edit_ingredient.php?id=<?php echo $row['main_ingredient_id']?>" class="btn btn-outline-primary">Edit</a>
                        
 
                             <button class='delete btn btn-outline-dark' id='del_<?= $id ?>' data-id='<?= $id ?>'>Delete</button>
@@ -178,9 +175,8 @@ Toast.fire({
       <!-- End Content -->
 
 
-
-    <?php include('footer2.php'); ?>
-   
+ <?php include('footer2.php'); ?>
+     
 
            <!-- JS dependencies -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -188,7 +184,7 @@ Toast.fire({
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js"></script>
-        <script src='script-cat.js' type='text/javascript'></script>
+        <script src='script-ingredient.js' type='text/javascript'></script>
 
 
     <?php include('footer.php'); ?>

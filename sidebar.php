@@ -87,11 +87,21 @@
         <!--   ------------------------- Manage Food start ----------------------- -->
 <li class="navbar-vertical-aside-has-menu ">
             <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
-         
+            <?php 
+                  include('confs/config.php');
+                    $sql_p = "SELECT f.*,c.cat_id,c.cat_name,m.menu_id, m.menu_name from food f 
+                LEFT JOIN categories c 
+                ON c.cat_id = f.category_id
+                LEFT JOIN menu m 
+                ON m.menu_id = f.menu_id 
+                where f.menu_id = 1";
+                    $run_p = mysqli_query($conn,$sql_p);
+                    $count_p = mysqli_num_rows($run_p);       
+                ?>
 
 
               <i class="fal fa-soup nav-icon"></i>
-              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Food <span class="badge badge-info badge-pill ml-1">12</span></span>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Food <span class="badge badge-info badge-pill ml-1"><?php echo $count_p; ?></span></span>
             </a>
 
             <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
@@ -115,11 +125,21 @@
          <!--   ------------------------- Manage Drink start ----------------------- -->
 <li class="navbar-vertical-aside-has-menu ">
             <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Apps">
-         
+              <?php 
+                  include('confs/config.php');
+                    $sql_d = "SELECT f.*,c.cat_id,c.cat_name,m.menu_id, m.menu_name from food f 
+                LEFT JOIN categories c 
+                ON c.cat_id = f.category_id
+                LEFT JOIN menu m 
+                ON m.menu_id = f.menu_id 
+                where f.menu_id = 2";
+                    $run_d = mysqli_query($conn,$sql_d);
+                    $count_d = mysqli_num_rows($run_d);       
+                ?>
 
 
               <i class="fal fa-glass-citrus nav-icon"></i>
-              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Drink <span class="badge badge-info badge-pill ml-1">13</span></span>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Drink <span class="badge badge-info badge-pill ml-1"><?php echo $count_d; ?></span></span>
             </a>
 
             <ul class="js-navbar-vertical-aside-submenu nav nav-sub">

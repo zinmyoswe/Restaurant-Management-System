@@ -21,17 +21,17 @@
 	echo"
 	<nav aria-label='Contacts Page Navigation'>
 	<ul class='pagination justify-content-center m-0'>
-	<li class='page-item'><a class='page-link' href ='view_food.php?page=1'>&laquo;</a></li>
+	<li class='page-item'><a class='page-link' href ='view_drink.php?page=1'>&laquo;</a></li>
 
 	";
 
 	for ($i= 1; $i<=$total_pages; $i++){
-		echo "<li class='page-item'><a class='page-link' href='view_food.php?page=$i'>$i</a></li>";
+		echo "<li class='page-item'><a class='page-link' href='view_drink.php?page=$i'>$i</a></li>";
 	}
 
 	//Going to last page
 
-	echo "<li class='page-item'><a class='page-link' href='view_food.php?page=$total_pages'>&raquo;</a></li></ul>
+	echo "<li class='page-item'><a class='page-link' href='view_drink.php?page=$total_pages'>&raquo;</a></li></ul>
 		</nav>
 
 	";

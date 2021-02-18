@@ -47,7 +47,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="layoutSkinsRadio" id="layoutSkinsRadio1" checked="" value="default" type="radio">
                     <label class="custom-checkbox-card-label" for="layoutSkinsRadio1">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/layouts-sidebar-default.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/layouts-sidebar-default.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Default</span>
                   </div>
@@ -61,7 +61,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="layoutSkinsRadio" id="layoutSkinsRadio2" value="navbar-dark" type="radio">
                     <label class="custom-checkbox-card-label" for="layoutSkinsRadio2">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/layouts-sidebar-dark.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/layouts-sidebar-dark.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Dark</span>
                   </div>
@@ -75,7 +75,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="layoutSkinsRadio" id="layoutSkinsRadio3" value="navbar-light" type="radio">
                     <label class="custom-checkbox-card-label" for="layoutSkinsRadio3">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/layouts-sidebar-light.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/layouts-sidebar-light.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Light</span>
                   </div>
@@ -95,7 +95,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="sidebarLayoutOptions" id="sidebarLayoutOptions1" checked="" value="default" type="radio">
                     <label class="custom-checkbox-card-label" for="sidebarLayoutOptions1">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/sidebar-default-classic.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/sidebar-default-classic.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Default</span>
                   </div>
@@ -109,7 +109,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="sidebarLayoutOptions" id="sidebarLayoutOptions2" value="navbar-vertical-aside-compact-mode" type="radio">
                     <label class="custom-checkbox-card-label" for="sidebarLayoutOptions2">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/sidebar-compact.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/sidebar-compact.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Compact</span>
                   </div>
@@ -123,7 +123,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="sidebarLayoutOptions" id="sidebarLayoutOptions3" value="navbar-vertical-aside-mini-mode" type="radio">
                     <label class="custom-checkbox-card-label" for="sidebarLayoutOptions3">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/sidebar-mini.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/sidebar-mini.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Mini</span>
                   </div>
@@ -143,7 +143,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="headerLayoutOptions" id="headerLayoutOptions1" value="single" type="radio">
                     <label class="custom-checkbox-card-label" for="headerLayoutOptions1">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/header-default-fluid.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/header-default-fluid.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Default (Fluid)</span>
                   </div>
@@ -157,7 +157,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="headerLayoutOptions" id="headerLayoutOptions2" value="single-container" type="radio">
                     <label class="custom-checkbox-card-label" for="headerLayoutOptions2">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/header-default-container.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/header-default-container.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Default (Container)</span>
                   </div>
@@ -171,7 +171,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="headerLayoutOptions" id="headerLayoutOptions3" value="double" type="radio">
                     <label class="custom-checkbox-card-label" for="headerLayoutOptions3">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/header-double-line-fluid.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/header-double-line-fluid.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Double line (Fluid)</span>
                   </div>
@@ -185,7 +185,7 @@
                   <div class="custom-checkbox-card mb-2">
                     <input class="custom-checkbox-card-input" name="headerLayoutOptions" id="headerLayoutOptions4" value="double-container" type="radio">
                     <label class="custom-checkbox-card-label" for="headerLayoutOptions4">
-                      <img class="custom-checkbox-card-img" src="./assets/svg/layouts/header-double-line-container.svg" alt="Image Description">
+                      <img class="custom-checkbox-card-img" src="https://htmlstream.com/front-dashboard/assets/svg/layouts/header-double-line-container.svg" alt="Image Description">
                     </label>
                     <span class="custom-checkbox-card-text">Double line (Container)</span>
                   </div>
@@ -245,7 +245,7 @@
       
       
 
-      <script src="./assets/js/demo.js"></script>
+      <script src="https://htmlstream.com/front-dashboard/assets/js/demo.js"></script>
     
     <!-- END ONLY DEV -->
 
@@ -623,7 +623,7 @@
                   <li class="list-group-item py-3">
                     <div class="media">
                       <div class="mt-1 mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/capsule.svg" alt="Image Description">
+                        <img class="avatar avatar-xs avatar-4by3" src="https://htmlstream.com/front-dashboard/assets/svg/brands/capsule.svg" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <div class="row align-items-center">
@@ -649,7 +649,7 @@
                   <li class="list-group-item py-3">
                     <div class="media">
                       <div class="mt-1 mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/mailchimp.svg" alt="Image Description">
+                        <img class="avatar avatar-xs avatar-4by3" src="https://htmlstream.com/front-dashboard/assets/svg/brands/mailchimp.svg" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <div class="row align-items-center">
@@ -675,7 +675,7 @@
                   <li class="list-group-item py-3">
                     <div class="media">
                       <div class="mt-1 mr-3">
-                        <img class="avatar avatar-xs avatar-4by3" src="./assets/svg/brands/google-webdev.svg" alt="Image Description">
+                        <img class="avatar avatar-xs avatar-4by3" src="https://htmlstream.com/front-dashboard/assets/svg/brands/google-webdev.svg" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <div class="row align-items-center">
@@ -990,7 +990,7 @@
                   <td class="table-column-pl-0">
                     <a class="media align-items-center" href="./user-profile.html">
                       <div class="avatar avatar-sm avatar-circle mr-2">
-                        <img class="avatar-img" src="./assets/img/160x160/img10.jpg" alt="Image Description">
+                        <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img10.jpg" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <span class="h5 text-hover-primary mb-0">Amanda Harvey <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Top endorsed"></i></span>
@@ -1012,7 +1012,7 @@
                     </div>
                   </td>
                   <td class="table-column-pl-0">
-                    <a class="media align-items-center" href="./user-profile.html">
+                    <a class="media align-items-center" href="https://htmlstream.com/front-dashboard/user-profile.html">
                       <div class="avatar avatar-sm avatar-soft-primary avatar-circle mr-2">
                         <span class="avatar-initials">A</span>
                       </div>
@@ -1036,9 +1036,9 @@
                     </div>
                   </td>
                   <td class="table-column-pl-0">
-                    <a class="media align-items-center" href="./user-profile.html">
+                    <a class="media align-items-center" href="https://htmlstream.com/front-dashboard/user-profile.html">
                       <div class="avatar avatar-sm avatar-circle mr-2">
-                        <img class="avatar-img" src="./assets/img/160x160/img3.jpg" alt="Image Description">
+                        <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img3.jpg" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <span class="h5 text-hover-primary mb-0">David Harrison</span>
@@ -1062,7 +1062,7 @@
                   <td class="table-column-pl-0">
                     <a class="media align-items-center" href="./user-profile.html">
                       <div class="avatar avatar-sm avatar-circle mr-2">
-                        <img class="avatar-img" src="./assets/img/160x160/img5.jpg" alt="Image Description">
+                        <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img5.jpg" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <span class="h5 text-hover-primary mb-0">Finch Hoot</span>
@@ -1110,7 +1110,7 @@
                   <td class="table-column-pl-0">
                     <a class="media align-items-center" href="./user-profile.html">
                       <div class="avatar avatar-sm avatar-circle mr-2">
-                        <img class="avatar-img" src="./assets/img/160x160/img9.jpg" alt="Image Description">
+                        <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img9.jpg" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <span class="h5 text-hover-primary mb-0">Ella Lauda <i class="tio-verified text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Top endorsed"></i></span>
@@ -1134,7 +1134,7 @@
                   <td class="table-column-pl-0">
                     <a class="media align-items-center" href="./user-profile.html">
                       <div class="avatar avatar-sm avatar-circle mr-2">
-                        <img class="avatar-img" src="./assets/img/160x160/img4.jpg" alt="Image Description">
+                        <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img4.jpg" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <span class="h5 text-hover-primary mb-0">Sam Kart</span>
@@ -1158,7 +1158,7 @@
                   <td class="table-column-pl-0">
                     <a class="media align-items-center" href="./user-profile.html">
                       <div class="avatar avatar-sm avatar-circle mr-2">
-                        <img class="avatar-img" src="./assets/img/160x160/img6.jpg" alt="Image Description">
+                        <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img6.jpg" alt="Image Description">
                       </div>
                       <div class="media-body">
                         <span class="h5 text-hover-primary mb-0">Costa Quinn</span>
@@ -1843,7 +1843,7 @@
             <li class="step-item">
               <div class="step-content-wrapper">
                 <div class="step-avatar">
-                  <img class="step-avatar-img" src="./assets/img/160x160/img9.jpg" alt="Image Description">
+                  <img class="step-avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img9.jpg" alt="Image Description">
                 </div>
 
                 <div class="step-content">
@@ -1858,7 +1858,7 @@
                         <div class="col-6">
                           <div class="media">
                               <span class="mt-1 mr-2">
-                                <img class="avatar avatar-xs" src="./assets/svg/brands/excel.svg" alt="Image Description">
+                                <img class="avatar avatar-xs" src="https://htmlstream.com/front-dashboard/assets/svg/brands/excel.svg" alt="Image Description">
                               </span>
                             <div class="media-body text-truncate">
                               <span class="d-block font-size-sm text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
@@ -1869,7 +1869,7 @@
                         <div class="col-6">
                           <div class="media">
                               <span class="mt-1 mr-2">
-                                <img class="avatar avatar-xs" src="./assets/svg/brands/word.svg" alt="Image Description">
+                                <img class="avatar avatar-xs" src="https://htmlstream.com/front-dashboard/assets/svg/brands/word.svg" alt="Image Description">
                               </span>
                             <div class="media-body text-truncate">
                               <span class="d-block font-size-sm text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
@@ -1908,7 +1908,7 @@
             <li class="step-item">
               <div class="step-content-wrapper">
                 <div class="step-avatar">
-                  <img class="step-avatar-img" src="./assets/img/160x160/img3.jpg" alt="Image Description">
+                  <img class="step-avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img3.jpg" alt="Image Description">
                 </div>
 
                 <div class="step-content">
@@ -1920,13 +1920,13 @@
                     <li class="list-group-item list-group-item-light">
                       <div class="row gx-1">
                         <div class="col">
-                          <img class="img-fluid rounded ie-sidebar-activity-img" src="./assets/svg/illustrations/card-1.svg" alt="Image Description">
+                          <img class="img-fluid rounded ie-sidebar-activity-img" src="https://htmlstream.com/front-dashboard/assets/svg/illustrations/card-1.svg" alt="Image Description">
                         </div>
                         <div class="col">
-                          <img class="img-fluid rounded ie-sidebar-activity-img" src="./assets/svg/illustrations/card-2.svg" alt="Image Description">
+                          <img class="img-fluid rounded ie-sidebar-activity-img" src="https://htmlstream.com/front-dashboard/assets/svg/illustrations/card-2.svg" alt="Image Description">
                         </div>
                         <div class="col">
-                          <img class="img-fluid rounded ie-sidebar-activity-img" src="./assets/svg/illustrations/card-3.svg" alt="Image Description">
+                          <img class="img-fluid rounded ie-sidebar-activity-img" src="https://htmlstream.com/front-dashboard/assets/svg/illustrations/card-3.svg" alt="Image Description">
                         </div>
                         <div class="col-auto align-self-center">
                           <div class="text-center">
@@ -1963,7 +1963,7 @@
             <li class="step-item">
               <div class="step-content-wrapper">
                 <div class="step-avatar">
-                  <img class="step-avatar-img" src="./assets/img/160x160/img7.jpg" alt="Image Description">
+                  <img class="step-avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img7.jpg" alt="Image Description">
                 </div>
 
                 <div class="step-content">
@@ -1981,7 +1981,7 @@
             <li class="step-item">
               <div class="step-content-wrapper">
                 <div class="step-avatar">
-                  <img class="step-avatar-img" src="./assets/img/160x160/img5.jpg" alt="Image Description">
+                  <img class="step-avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img5.jpg" alt="Image Description">
                 </div>
 
                 <div class="step-content">
@@ -2038,7 +2038,7 @@
           <div class="modal-body p-sm-5">
             <div class="text-center">
               <div class="w-75 w-sm-50 mx-auto mb-4">
-                <img class="img-fluid" src="./assets/svg/illustrations/graphs.svg" alt="Image Description">
+                <img class="img-fluid" src="https://htmlstream.com/front-dashboard/assets/svg/illustrations/graphs.svg" alt="Image Description">
               </div>
 
               <h4 class="h1">Welcome to Front</h4>
@@ -2055,16 +2055,16 @@
             <div class="w-85 mx-auto">
               <div class="row justify-content-between">
                 <div class="col">
-                  <img class="img-fluid ie-welcome-brands" src="./assets/svg/brands/gitlab-gray.svg" alt="Image Description">
+                  <img class="img-fluid ie-welcome-brands" src="https://htmlstream.com/front-dashboard/assets/svg/brands/gitlab-gray.svg" alt="Image Description">
                 </div>
                 <div class="col">
-                  <img class="img-fluid ie-welcome-brands" src="./assets/svg/brands/fitbit-gray.svg" alt="Image Description">
+                  <img class="img-fluid ie-welcome-brands" src="https://htmlstream.com/front-dashboard/assets/svg/brands/fitbit-gray.svg" alt="Image Description">
                 </div>
                 <div class="col">
-                  <img class="img-fluid ie-welcome-brands" src="./assets/svg/brands/flow-xo-gray.svg" alt="Image Description">
+                  <img class="img-fluid ie-welcome-brands" src="https://htmlstream.com/front-dashboard/assets/svg/brands/flow-xo-gray.svg" alt="Image Description">
                 </div>
                 <div class="col">
-                  <img class="img-fluid ie-welcome-brands" src="./assets/svg/brands/layar-gray.svg" alt="Image Description">
+                  <img class="img-fluid ie-welcome-brands" src="https://htmlstream.com/front-dashboard/assets/svg/brands/layar-gray.svg" alt="Image Description">
                 </div>
               </div>
             </div>
@@ -2132,7 +2132,7 @@
 
               <div class="col-auto">
                 <a class="d-flex align-items-center font-size-sm text-body" href="#">
-                  <img class="avatar avatar-xss mr-2" src="./assets/svg/brands/gmail.svg" alt="Image Description">
+                  <img class="avatar avatar-xss mr-2" src="https://htmlstream.com/front-dashboard/assets/svg/brands/gmail.svg" alt="Image Description">
                   Import contacts
                 </a>
               </div>
@@ -2145,7 +2145,7 @@
               <li>
                 <div class="media">
                   <div class="avatar avatar-sm avatar-circle mr-3">
-                    <img class="avatar-img" src="./assets/img/160x160/img10.jpg" alt="Image Description">
+                    <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img10.jpg" alt="Image Description">
                   </div>
 
                   <div class="media-body">
@@ -2185,7 +2185,7 @@
               <li>
                 <div class="media">
                   <div class="avatar avatar-sm avatar-circle mr-3">
-                    <img class="avatar-img" src="./assets/img/160x160/img3.jpg" alt="Image Description">
+                    <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img3.jpg" alt="Image Description">
                   </div>
 
                   <div class="media-body">
@@ -2225,7 +2225,7 @@
               <li>
                 <div class="media">
                   <div class="avatar avatar-sm avatar-circle mr-3">
-                    <img class="avatar-img" src="./assets/img/160x160/img9.jpg" alt="Image Description">
+                    <img class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img9.jpg" alt="Image Description">
                   </div>
 
                   <div class="media-body">

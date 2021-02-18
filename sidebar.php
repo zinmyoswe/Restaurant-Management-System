@@ -512,44 +512,44 @@
           <!-- Language -->
           <li class="navbar-vertical-aside-has-menu nav-footer-item ">
             <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle " href="javascript:;" title="Language">
-              <img class="avatar avatar-xss avatar-circle" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
+              <img class="avatar avatar-xss avatar-circle" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Language</span>
             </a>
 
             <ul class="js-navbar-vertical-aside-submenu nav nav-sub">
               <li class="nav-item">
                 <a class="nav-link" href="#" title="English (US)">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
                   English (US)
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="English (UK)">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
                   English (UK)
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="Deutsch">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
                   Deutsch
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="Dansk">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
                   Dansk
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="Italiano">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
                   Italiano
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#" title="中文 (繁體)">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
                   中文 (繁體)
                 </a>
               </li>
@@ -630,33 +630,33 @@
                   &quot;animationIn&quot;: &quot;slideInDown&quot;,
                   &quot;hideOnScroll&quot;: true
                  }" data-hs-unfold-target="#languageDropdown" data-hs-unfold-invoker="">
-                <img class="avatar avatar-xss avatar-circle" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
+                <img class="avatar avatar-xss avatar-circle" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="United States Flag">
               </a>
 
               <div id="languageDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu navbar-vertical-footer-dropdown hs-unfold-hidden hs-unfold-content-initialized hs-unfold-css-animation animated" data-hs-target-height="262.717" data-hs-unfold-content="" data-hs-unfold-content-animation-in="slideInDown" data-hs-unfold-content-animation-out="fadeOut" style="animation-duration: 300ms;">
                 <span class="dropdown-header">Select language</span>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/us.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="English">English (US)</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/gb.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="English">English (UK)</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/de.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="Deutsch">Deutsch</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/dk.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="Dansk">Dansk</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/it.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="Italiano">Italiano</span>
                 </a>
                 <a class="dropdown-item" href="#">
-                  <img class="avatar avatar-xss avatar-circle mr-2" src="./assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
+                  <img class="avatar avatar-xss avatar-circle mr-2" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/cn.svg" alt="Flag">
                   <span class="text-truncate pr-2" title="中文 (繁體)">中文 (繁體)</span>
                 </a>
               </div>

@@ -11,9 +11,9 @@ $w2 = $_GET['w2'];
 
 
 <style type="text/css">
-     .modal-dialog{
+    /* .modal-dialog{
             margin-top: 250px;
-        }
+        }*/
         .btn-secondary {
     color: #fff;
     background-color: black;
@@ -60,6 +60,9 @@ Toast.fire({
           </script>
 <?php } ?>
 
+
+
+
     <main id="content" role="main" class="main">
       <!-- Content -->
       <div class="content container-fluid">
@@ -75,6 +78,14 @@ Toast.fire({
               <!-- Header -->
               <div class="card-header">
                 <h5 class="card-header-title">Manage Food</h5>
+                      <!-- Button trigger modal -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
+
+
+
+       
 
                 <!-- Unfold -->
                 <div class="hs-unfold">
@@ -167,7 +178,7 @@ Toast.fire({
                     <tr>
                         <td align='center'><?= $count ?></td>
 
-                        <td><a href='<?= $id ?>' target='_blank'><?= $food_name ?></a></td>
+                        <td><a href="detail_food.php?id=<?php echo $row['food_id']?>" ><?= $food_name ?></a></td>
                          <td><?php echo $row['cat_name'] ?></td> 
 
                         <td><?php echo $row['price'] ?> Ks</td>
@@ -176,6 +187,8 @@ Toast.fire({
                            <td><img src="cover/<?php echo $row['cover'] ?>" width="200"></td>
                        
                         <td align='center' width="200">
+
+                       
                             <a href="edit_food.php?id=<?php echo $row['food_id']?>" class="btn btn-outline-primary">Edit</a>
                        
 
@@ -219,6 +232,8 @@ Toast.fire({
     <?php include('footer2.php'); ?>
       
            <!-- JS dependencies -->
+
+       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Bootstrap 4 dependency -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

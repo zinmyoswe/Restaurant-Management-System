@@ -167,7 +167,7 @@ Toast.fire({
                     <tr>
                         <td align='center'><?= $count ?></td>
 
-                        <td><a href='<?= $id ?>' target='_blank'><?= $food_name ?></a></td>
+                        <td><a href="detail_drink.php?id=<?php echo $row['food_id']?>"><?= $food_name ?></a></td>
                          <td><?php echo $row['cat_name'] ?></td> 
 
                         <td><?php echo $row['price'] ?> Ks</td>

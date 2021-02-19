@@ -190,7 +190,7 @@
                         <div id="addPhoneFieldContainer"></div>
 
                         <a class="js-create-field form-link btn btn-sm btn-no-focus btn-ghost-primary " href="javascript:;">
-                          <i class="fal fa-plus"></i> Add phone
+                          <!-- <i class="fal fa-plus"></i> Add phone -->
                         </a>
                       </div>
                     </div>
@@ -242,51 +242,45 @@
 
                     <!-- Form Group -->
                     <div class="row form-group">
-                      <label for="organizationLabel" class="col-sm-3 col-form-label input-label">Organization</label>
+                      <label for="organizationLabel" class="col-sm-3 col-form-label input-label">Company</label>
 
                       <div class="col-sm-9">
-                        <input class="form-control" name="organization" id="organizationLabel" placeholder="Htmlstream" aria-label="Htmlstream" type="text">
+                        <input class="form-control" name="company" id="organizationLabel" placeholder="Htmlstream" aria-label="Htmlstream" type="text" value="Huawei Yangon Technologies"disabled/>
                       </div>
                     </div>
                     <!-- End Form Group -->
 
                     <!-- Form Group -->
                     <div class="row form-group">
-                      <label for="departmentLabel" class="col-sm-3 col-form-label input-label">Department</label>
+                      <label for="departmentLabel" class="col-sm-3 col-form-label input-label">Role</label>
 
                       <div class="col-sm-9">
-                        <input class="form-control" name="department" id="departmentLabel" placeholder="Human resources" aria-label="Human resources" type="text">
+                        
+                        <select name="role" class="form-control">
+                        	<option value="0">Choose a Role</option>
+                        	<option value="1">Admin</option>
+                        	<option value="2">Manager</option>
+                        	<option value="3">CEO&Founder</option>
+                        	<option value="4">Caisher</option>
+                        	<option value="4">Waiter</option>
+                        	
+                        </select>
+                      </div>
+                    </div>
+                    <!-- End Form Group -->
+
+                      <!-- Form Group -->
+                    <div class="row form-group">
+                      <label for="organizationLabel" class="col-sm-3 col-form-label input-label">Password</label>
+
+                      <div class="col-sm-9">
+                        <input class="form-control" name="password" id="organizationLabel" placeholder="Htmlstream" aria-label="Htmlstream" type="password" value="Abc1234%" disabled/>
                       </div>
                     </div>
                     <!-- End Form Group -->
 
                     <!-- Form Group -->
-                    <div class="row">
-                      <label class="col-sm-3 col-form-label input-label">Account type</label>
-
-                      <div class="col-sm-9">
-                        <div class="input-group input-group-sm-down-break">
-                          <!-- Custom Radio -->
-                          <div class="form-control">
-                            <div class="custom-control custom-radio">
-                              <input class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio1" type="radio">
-                              <label class="custom-control-label" for="userAccountTypeRadio1">Individual</label>
-                            </div>
-                          </div>
-                          <!-- End Custom Radio -->
-
-                          <!-- Custom Radio -->
-                          <div class="form-control">
-                            <div class="custom-control custom-radio">
-                              <input class="custom-control-input" name="userAccountTypeRadio" id="userAccountTypeRadio2" type="radio">
-                              <label class="custom-control-label" for="userAccountTypeRadio2">Company</label>
-                            </div>
-                          </div>
-                          <!-- End Custom Radio -->
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
+                    
                   </div>
                   <!-- End Body -->
 
@@ -294,11 +288,11 @@
                   <div class="card-footer d-flex justify-content-end align-items-center">
                   	<button type="submit" name="cat" class="btn btn-primary float-right">Save</button>
                   		</form>
-                    <button type="button" class="btn btn-primary" data-hs-step-form-next-options="{
+                    <!-- <button type="button" class="btn btn-primary" data-hs-step-form-next-options="{
                               &quot;targetSelector&quot;: &quot;#addUserStepBillingAddress&quot;
                             }">
                       Next <i class="tio-chevron-right"></i>
-                    </button>
+                    </button> -->
                   </div>
                   <!-- End Footer -->
                 </div>

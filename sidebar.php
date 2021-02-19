@@ -400,6 +400,8 @@
           </li>
         <!--   ------------------------- Manage Menu end ----------------------- -->
 
+
+
         
           
 
@@ -408,24 +410,14 @@
 
          
 
-          <li class="nav-item ">
+       <!--    <li class="nav-item ">
             <a class="js-nav-tooltip-link nav-link " href="./welcome-page.html" title="" data-placement="left" data-original-title="Welcome page">
               <i class="tio-visible-outlined nav-icon"></i>
               <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Welcome Page</span>
             </a>
-          </li>
+          </li> -->
 
-          <li class="nav-item">
-            <small class="nav-subtitle" title="Layouts">Layouts</small>
-            <small class="tio-more-horizontal nav-subtitle-replacer"></small>
-          </li>
-
-          <li class="nav-item ">
-            <a class="js-nav-tooltip-link nav-link " href="./layouts/layouts.html" title="" data-placement="left" data-original-title="Layouts">
-              <i class="tio-dashboard-vs-outlined nav-icon"></i>
-              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Layouts</span>
-            </a>
-          </li>
+          
 
           <li class="nav-item">
             <div class="nav-divider"></div>
@@ -437,18 +429,21 @@
           </li>
 
           <li class="nav-item ">
-            <a class="js-nav-tooltip-link nav-link" href="./documentation/index.html" title="" data-placement="left" data-original-title="Documentation">
-              <i class="tio-book-opened nav-icon"></i>
-              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Documentation <span class="badge badge-primary badge-pill ml-1">v1.1</span></span>
+            <a class="js-nav-tooltip-link nav-link" href="view_role.php" title="" data-placement="left" data-original-title="Documentation">
+              <i class="fal fa-books nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Role <span class="badge badge-primary badge-pill ml-1">v1.1</span></span>
             </a>
           </li>
 
           <li class="nav-item ">
-            <a class="js-nav-tooltip-link nav-link" href="./documentation/typography.html" title="" data-placement="left" data-original-title="Components">
-              <i class="tio-layers-outlined nav-icon"></i>
-              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Components</span>
+            <a class="js-nav-tooltip-link nav-link" href="view_attribute.php" title="" data-placement="left" data-original-title="Documentation">
+              
+              <i class="fal fa-network-wired nav-icon"></i>
+              <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Manage Attribute </span>
             </a>
           </li>
+
+       
 
           <li class="nav-item">
             <small class="tio-more-horizontal nav-subtitle-replacer"></small>

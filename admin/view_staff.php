@@ -401,7 +401,7 @@ Toast.fire({
                     </div>
                   </td>
                   <td class="table-column-pl-0">
-                    <a class="media align-items-center" href="./ecommerce-product-details.html">
+                    <a class="media align-items-center" href="detail_staff.php?id=<?php echo $row['staff_id'] ?>">
                       <img class="avatar avatar-lg mr-3" src="image/<?php echo $row['image'] ?>" alt="Image Description">
                       <div class="media-body">
                         <h5 class="text-hover-primary mb-0"><?php echo $row['firstname'] ?> <?php echo $row['lastname'] ?></h5>
@@ -411,8 +411,8 @@ Toast.fire({
                   <td><?php echo $row['role_name'] ?></td>
                   
                   <td>
-                    <label class="toggle-switch toggle-switch-sm" for="stocksCheckbox1">
-                      <input class="toggle-switch-input" id="stocksCheckbox1" checked="" type="checkbox">
+                    <label class="toggle-switch toggle-switch-sm" for="stocksCheckbox<?php echo $row['staff_id'] ?>">
+                      <input class="toggle-switch-input" id="stocksCheckbox<?php echo $row['staff_id'] ?>" checked="" type="checkbox">
                       <span class="toggle-switch-label">
                         <span class="toggle-switch-indicator"></span>
                       </span>
@@ -1159,7 +1159,7 @@ Toast.fire({
             <h4 id="exportProductsModalTitle" class="modal-title">Export products</h4>
 
             <button type="button" class="btn btn-icon btn-sm btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
-              <i class="tio-clear tio-lg"></i>
+              <i class="fal fa-times"></i>
             </button>
           </div>
           <!-- End Header -->
@@ -1224,7 +1224,7 @@ Toast.fire({
             <h4 id="importProductsModalTitle" class="modal-title">Import products by CSV</h4>
 
             <button type="button" class="btn btn-icon btn-sm btn-ghost-secondary" data-dismiss="modal" aria-label="Close">
-              <i class="tio-clear tio-lg"></i>
+              <i class="fal fa-times"></i>
             </button>
           </div>
           <!-- End Header -->
@@ -1238,7 +1238,7 @@ Toast.fire({
               <!-- Dropzone -->
               <div id="attachFilesNewProjectLabel" class="js-dropzone dropzone-custom custom-file-boxed">
                 <div class="dz-message custom-file-boxed-label">
-                  <img class="avatar avatar-xl avatar-4by3 mb-3" src="./assets/svg/illustrations/browse.svg" alt="Image Description">
+                  <img class="avatar avatar-xl avatar-4by3 mb-3" src="https://htmlstream.com/front-dashboard/assets/svg/illustrations/browse.svg" alt="Image Description">
                   <h5 class="mb-1">Choose files to upload</h5>
                   <p class="mb-2">or</p>
                   <span class="btn btn-sm btn-primary">Browse files</span>

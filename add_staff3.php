@@ -169,6 +169,10 @@ Toast.fire({
                         <?php }elseif ($country == 'KR') {?>
                         <img class="avatar avatar-xss avatar-circle mr-1" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/kr.svg" alt="Great Britain Flag"> South Korea
 
+                        <?php }elseif ($country == 'TH') { ?>
+                        <img class="avatar avatar-xss avatar-circle mr-1" src="https://htmlstream.com/front-dashboard/assets/vendor/flag-icon-css/flags/1x1/th.svg" alt="Great Britain Flag">
+                        Thailand
+
                         <?php } ?>
 
                       </dd>
@@ -196,13 +200,13 @@ Toast.fire({
                     <button type="button" class="btn btn-ghost-secondary mb-2 mb-sm-0" data-hs-step-form-prev-options="{
                          &quot;targetSelector&quot;: &quot;#addUserStepBillingAddress&quot;
                        }">
-                      <i class="fal fa-left"></i> Previous step
+                      <i class="fal fa-chevron-left mr-1"></i> Previous step
                     </button>
 
                     <div class="ml-auto">
                       <button type="button" class="btn btn-white mr-2">Save in drafts</button>
                       
-                      <a href="view.staff.php?w2=success" class="btn btn-primary">Finish</a>
+                      <a href="view_staff.php?w2=success" class="btn btn-primary">Finish</a>
                      
                     </div>
                   </div>
@@ -222,7 +226,7 @@ Toast.fire({
                     <button type="button" class="btn btn-ghost-secondary" data-hs-step-form-prev-options="{
                          &quot;targetSelector&quot;: &quot;#addUserStepProfile&quot;
                        }">
-                      <i class="tio-chevron-left"></i> Previous step
+                      <i class="fal fa-chevron-left"></i> Previous step
                     </button>
 
                     <div class="ml-auto">

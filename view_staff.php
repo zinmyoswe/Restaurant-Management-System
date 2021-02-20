@@ -6,7 +6,49 @@
   include('navbar.php');
   include('sidebar.php');
 
+  $w2 = $_GET['w2'];
 ?>
+
+
+<?php if($w2 == 'success'){ ?>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <!-- <script type="text/javascript" src="https://adminlte.io/themes/dev/AdminLTE/plugins/sweetalert2/sweetalert2.min.js"></script> -->
+                <script type="text/javascript">
+            
+            const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer)
+    toast.addEventListener('mouseleave', Swal.resumeTimer)
+  }
+})
+
+Toast.fire({
+  icon: 'success',
+  title: 'Staff added completely'
+}).then(function() {
+            window.location = "view_staff.php";
+        });
+ </script>
+<?php } elseif($w2 == 'updated'){ ?>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+       <script type="text/javascript">
+            
+            Swal.fire({
+              icon: 'success',
+              title: 'Updated',
+              text: 'Staff updated successfully'
+            }).then(function() {
+            window.location = "view_staff.php";
+        });     
+                     
+          </script>
+<?php } ?>
+
 
 
     <!-- End Navbar Vertical -->
@@ -292,7 +334,19 @@
                       <input id="datatableCheckAll" class="custom-control-input" type="checkbox">
                       <label class="custom-control-label" for="datatableCheckAll"></label>
                     </div>
-                  </th><th class="table-column-pl-0 sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 330px;" aria-label="Product: activate to sort column ascending">Product</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 105px;" aria-label="Type: activate to sort column ascending">Type</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 52px;" aria-label="Stocks">Stocks</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 117px;" aria-label="SKU: activate to sort column ascending">SKU</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 88px;" aria-label="Price: activate to sort column ascending">Price</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 116px;" aria-label="Variants: activate to sort column ascending">Variants</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 98px;" aria-label="Actions">Actions</th></tr>
+                  </th>
+                  <th class="table-column-pl-0 sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 230px;" aria-label="Product: activate to sort column ascending">Product</th>
+                  <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 105px;" aria-label="Type: activate to sort column ascending">Position</th>
+
+                  <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 52px;" aria-label="Stocks">Stocks</th>
+
+                  <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 117px;" aria-label="SKU: activate to sort column ascending">Mail</th>
+
+                  <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 88px;" aria-label="Price: activate to sort column ascending">Phone</th>
+
+                  <th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 116px;" aria-label="Variants: activate to sort column ascending">Status</th>
+
+                  <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 98px;" aria-label="Actions">Actions</th></tr>
               </thead>
 
               <tbody>
@@ -384,7 +438,7 @@
 
                         <div id="productsEditDropdown1" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right mt-1 hs-unfold-hidden hs-unfold-content-initialized hs-unfold-css-animation animated" data-hs-target-height="163.2" data-hs-unfold-content="" data-hs-unfold-content-animation-in="slideInUp" data-hs-unfold-content-animation-out="fadeOut" style="animation-duration: 300ms;">
                           <a class="dropdown-item" href="#">
-                            <i class="tio-delete-outlined dropdown-item-icon"></i> Delete
+                            <i class="fal fa-trash dropdown-item-icon"></i> Delete
                           </a>
                           <a class="dropdown-item" href="#">
                             <i class="tio-archive dropdown-item-icon"></i> Archive

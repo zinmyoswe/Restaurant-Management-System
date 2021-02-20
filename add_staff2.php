@@ -5,8 +5,53 @@
   include('header.php');
   include('navbar.php');
   include('sidebar.php');
+$w2 = $_GET['w2'];
+
+  $sql = mysqli_query($conn,"SELECT * from staff order by staff_id desc limit 1");
+  $row = mysqli_fetch_assoc($sql);
+
 
 ?>
+
+<?php if($w2 == 'success'){ ?>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <!-- <script type="text/javascript" src="https://adminlte.io/themes/dev/AdminLTE/plugins/sweetalert2/sweetalert2.min.js"></script> -->
+                <script type="text/javascript">
+            
+            const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 3000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer)
+    toast.addEventListener('mouseleave', Swal.resumeTimer)
+  }
+})
+
+Toast.fire({
+  icon: 'success',
+  title: 'Staff Info added successfully'
+}).then(function() {
+            window.location = "add_staff2.php";
+        });
+ </script>
+<?php } elseif($w2 == 'updated'){ ?>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+       <script type="text/javascript">
+            
+            Swal.fire({
+              icon: 'success',
+              title: 'Updated',
+              text: 'Staff Information updated successfully'
+            }).then(function() {
+            window.location = "add_staff2.php";
+        });     
+                     
+          </script>
+<?php } ?>
+
     
 
     
@@ -27,7 +72,7 @@
             <div class="col-lg-8">
               <!-- Step -->
               <ul id="addUserStepFormProgress" class="js-step-progress step step-sm step-icon-sm step step-inline step-item-between mb-3 mb-md-5">
-                <li class="step-item active focus">
+                <li class="step-item ">
                   <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options="{
                       &quot;targetSelector&quot;: &quot;#addUserStepProfile&quot;
                     }">
@@ -38,7 +83,7 @@
                   </a>
                 </li>
 
-                <li class="step-item">
+                <li class="step-item active focus">
                   <a class="step-content-wrapper" href="javascript:;" data-hs-step-form-next-options="{
                       &quot;targetSelector&quot;: &quot;#addUserStepBillingAddress&quot;
                     }">
@@ -70,261 +115,50 @@
                   <div class="card-body">
                   
                              <?php
+
                      include('confs/config.php');
           if(isset($_POST['cat'])){
-            $firstname = $_POST['firstname'];
-           $lastname = $_POST['lastname'];
-           $email = $_POST['email'];
-           $phone = $_POST['phone'];
-           $company = $_POST['company'];
-           $role_id = $_POST['role_id'];
-           $password = $_POST['password'];
-           $image = $_FILES['image']['name'];
-      	   $tmp = $_FILES['image']['tmp_name'];
-
-      	   if($image){
-        move_uploaded_file($tmp, "image/$image");
-
-      }
-
+           
+           $staff_id = $_POST['staff_id'];
+           $location = $_POST['location'];
+           $city = $_POST['city'];
+           $state = $_POST['state'];
+           $addressLine1 = $_POST['addressLine1'];
+           $addressLine2 = $_POST['addressLine2'];
+           $zipCode  = $_POST['zipCode'];
+           
   
-            if($firstname == null){
+            if($city == null){
                   echo '  <div class="alert alert-danger">
-        <i class="fa fa-exclamation-triangle"> </i> First Name Required!
+        <i class="fa fa-exclamation-triangle"> </i> City Required!
         </div>';
                 }else{
-      $query = $conn->query("INSERT INTO staff(firstname,lastname,email,phone,company,role_id,password,image,status,created_by,modified_by,created_date,modified_date)
-      VALUES ('$firstname','$lastname','$email','$phone','$company','$role_id','$password','$image','onjob','zinmyo','zinmyo',NOW(),NOW())");
+      $query = $conn->query("INSERT INTO staff_address(staff_id,location,city,state,address1,address2,zip,created_by,modified_by,created_date,modified_date)
+      VALUES ('$staff_id','$location','$city','$state','$addressLine1','$addressLine2','$zipCode','zinmyo','zinmyo',NOW(),NOW())");
         
                
              if($query){
 
        
   
-        echo "<script>window.open('add_staff2.php?w2=success','_self')</script>";
+        echo "<script>window.open('add_staff3.php?w2=success','_self')</script>";
                   }
                 }
                 }
           ?>
                     <!-- Form Group -->
                     <form method="post" action="" enctype="multipart/form-data">
-
-          
-
-                    	  <!-- Form Group -->
-                    <div class="row form-group">
-                      <label class="col-sm-3 col-form-label input-label">Avatar</label>
-
-                      <div class="col-sm-9">
-                        <div class="d-flex align-items-center">
-                          <!-- Avatar -->
-                          <label class="avatar avatar-xl avatar-circle avatar-uploader mr-5" for="avatarUploader">
-                            <img id="avatarImg" class="avatar-img" src="https://htmlstream.com/front-dashboard/assets/img/160x160/img1.jpg" alt="Image Description">
-
-                            <input name="image" class="js-file-attach avatar-uploader-input" id="avatarUploader" data-hs-file-attach-options="{
-                                      &quot;textTarget&quot;: &quot;#avatarImg&quot;,
-                                      &quot;mode&quot;: &quot;image&quot;,
-                                      &quot;targetAttr&quot;: &quot;src&quot;,
-                                      &quot;resetTarget&quot;: &quot;.js-file-attach-reset-img&quot;,
-                                      &quot;resetImg&quot;: &quot;https://htmlstream.com/front-dashboard/assets/img/160x160/img1.jpg&quot;,
-                                      &quot;allowTypes&quot;: [&quot;.png&quot;, &quot;.jpeg&quot;, &quot;.jpg&quot;]
-                                   }" type="file">
-
-                            <span class="avatar-uploader-trigger">
-                              <i class="far fa-pencil avatar-uploader-icon shadow-soft"></i>
-                            </span>
-                          </label>
-                          <!-- End Avatar -->
-
-                          <button type="button" class="js-file-attach-reset-img btn btn-white">Delete</button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
-
-                       <div class="row form-group">
-                      <label for="firstNameLabel" class="col-sm-3 col-form-label input-label">Full name <i class="far fa-help text-body ml-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Displayed on public forums, such as Front."></i></label>
-
-                      <div class="col-sm-9">
-                        <div class="input-group input-group-sm-down-break">
-                          <input class="form-control" name="firstname" id="firstNameLabel" placeholder="Clarice" aria-label="Clarice" type="text">
-                          <input class="form-control" name="lastname" id="lastNameLabel" placeholder="Boone" aria-label="Boone" type="text">
-                        </div>
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
-
-                    <!-- Form Group -->
-                    <div class="row form-group">
-                      <label for="emailLabel" class="col-sm-3 col-form-label input-label">Email</label>
-
-                      <div class="col-sm-9">
-                        <input class="form-control" name="email" id="emailLabel" placeholder="clarice@example.com" aria-label="clarice@example.com" type="email">
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
-
-                    <!-- Form Group -->
-                    <div class="js-add-field row form-group" data-hs-add-field-options="{
-                            &quot;template&quot;: &quot;#addPhoneFieldTemplate&quot;,
-                            &quot;container&quot;: &quot;#addPhoneFieldContainer&quot;,
-                            &quot;defaultCreated&quot;: 0
-                          }">
-                      <label for="phoneLabel" class="col-sm-3 col-form-label input-label">Phone <span class="input-label-secondary">(Optional)</span></label>
-
-                      <div class="col-sm-9">
-                        <div class="input-group input-group-sm-down-break align-items-center">
-                          <input class="js-masked-input form-control" name="phone" id="phoneLabel" placeholder="+x(xxx)xxx-xx-xx" type="text">
-
-                          <div class="input-group-append">
-                            <!-- Select -->
-                            <div class="select2-custom">
-                              <select class="js-select2-custom custom-select select2-hidden-accessible" size="1" style="opacity: 0;" name="phoneSelect" data-hs-select2-options="{
-                                      &quot;minimumResultsForSearch&quot;: &quot;Infinity&quot;,
-                                      &quot;dropdownAutoWidth&quot;: true,
-                                      &quot;width&quot;: &quot;6rem&quot;
-                                    }" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                <option value="Mobile" selected="" data-select2-id="3">Mobile</option>
-                                <option value="Home" data-select2-id="4">Home</option>
-                                <option value="Work" data-select2-id="5">Work</option>
-                                <option value="Fax" data-select2-id="6">Fax</option>
-                                <option value="Direct" data-select2-id="7">Direct</option>
-                              </select>
-                              <!-- <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="2" style="width: 6rem;"><span class="selection"><span class="select2-selection custom-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-phoneSelect-e5-container"><span class="select2-selection__rendered" id="select2-phoneSelect-e5-container" role="textbox" aria-readonly="true" title="Mobile"><span>Mobile</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span> -->
-                              <!-- End Select -->
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Container For Input Field -->
-                        <div id="addPhoneFieldContainer"></div>
-
-                        <a class="js-create-field form-link btn btn-sm btn-no-focus btn-ghost-primary " href="javascript:;">
-                          <!-- <i class="fal fa-plus"></i> Add phone -->
-                        </a>
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
-
-                    <!-- Add Phone Input Field -->
-                    <div id="addAddressFieldTemplate" style="display: none;">
-                      <div class="input-group-add-field">
-                        <input class="form-control" data-name="addressLine" placeholder="Your address" aria-label="Your address" type="text">
-
-                        <a class="js-delete-field input-group-add-field-delete" href="javascript:;">
-                          <i class="tio-clear"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <!-- End Add Phone Input Field -->
-
-                    <!-- Add Phone Input Field -->
-                    <div id="addPhoneFieldTemplate" class="input-group-add-field" style="display: none;">
-                      <div class="input-group input-group-sm-down-break align-items-center">
-                        <input class="js-masked-input form-control" data-name="additionlPhone" placeholder="+x(xxx)xxx-xx-xx" aria-label="+x(xxx)xxx-xx-xx" data-hs-mask-options="{
-                                 &quot;template&quot;: &quot;+0(000)000-00-00&quot;
-                               }" maxlength="16" type="text">
-
-                        <div class="input-group-append">
-                          <!-- Select -->
-                          <div class="select2-custom">
-                            <select class="js-select2-custom-dynamic custom-select" size="1" style="opacity: 0;" data-name="additionlPhoneSelect" data-hs-select2-options="{
-                                    &quot;minimumResultsForSearch&quot;: &quot;Infinity&quot;,
-                                    &quot;dropdownAutoWidth&quot;: true,
-                                    &quot;width&quot;: &quot;6rem&quot;
-                                  }">
-                              <option value="Mobile" selected="">Mobile</option>
-                              <option value="Home">Home</option>
-                              <option value="Work">Work</option>
-                              <option value="Fax">Fax</option>
-                              <option value="Direct">Direct</option>
-                            </select>
-                          </div>
-                          <!-- End Select -->
-                        </div>
-                      </div>
-
-                      <a class="js-delete-field input-group-add-field-delete" href="javascript:;">
-                        <i class="tio-clear"></i>
-                      </a>
-                    </div>
-                    <!-- End Add Phone Input Field -->
-
-                    <!-- Form Group -->
-                    <div class="row form-group">
-                      <label for="organizationLabel" class="col-sm-3 col-form-label input-label">Company</label>
-
-                      <div class="col-sm-9">
-                        <input class="form-control"  id="organizationLabel" placeholder="Htmlstream" aria-label="Htmlstream" type="text" value="Huawei Yangon Technologies" disabled/>
-
-                        <input type="hidden" name="company" value="Huawei Yangon Technologies">
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
-
-                    <!-- Form Group -->
-                    <div class="row form-group">
-                      <label for="departmentLabel" class="col-sm-3 col-form-label input-label">Role</label>
-
-                      <div class="col-sm-9">
-                        
-                        <select name="role_id" class="form-control">
-                        	<option value="0">Choose a Role</option>
-                        	<?php 
-					         include('confs/config.php');
-					         $sql = mysqli_query($conn,"SELECT * from role");
-					         while($row = mysqli_fetch_assoc($sql)):
-					      ?>
-					      <option value="<?php echo $row['role_id'] ?>"><?php echo $row['role_name'] ?></option>
-					      <?php endwhile; ?>
-                        	
-                        </select>
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
-
                       <!-- Form Group -->
-                    <div class="row form-group">
-                      <label for="organizationLabel" class="col-sm-3 col-form-label input-label">Password</label>
-
-                      <div class="col-sm-9">
-                        <input class="form-control" name="password" id="organizationLabel" placeholder="Htmlstream" aria-label="Htmlstream" type="password" value="Abc1234%"/>
-
-
-                      </div>
-                    </div>
-                    <!-- End Form Group -->
-
-                    <!-- Form Group -->
-                    
-                  </div>
-                  <!-- End Body -->
-
-                  <!-- Footer -->
-                  <div class="card-footer d-flex justify-content-end align-items-center">
-                  	<button type="submit" name="cat" class="btn btn-primary float-right">Save</button>
-                  		</form>
-                    <!-- <button type="button" class="btn btn-primary" data-hs-step-form-next-options="{
-                              &quot;targetSelector&quot;: &quot;#addUserStepBillingAddress&quot;
-                            }">
-                      Next <i class="tio-chevron-right"></i>
-                    </button> -->
-                  </div>
-                  <!-- End Footer -->
-                </div>
-                <!-- End Card -->
-
-                <div id="addUserStepBillingAddress" class="card card-lg" style="display: none;">
-                  <!-- Body -->
-                  <div class="card-body">
-                    <!-- Form Group -->
+                      <input type="hidden" name="staff_id" value="<?php echo $row['staff_id'] ?>">
+                      
                     <div class="row form-group">
                       <label for="locationLabel" class="col-sm-3 col-form-label input-label">Location</label>
 
                       <div class="col-sm-9">
                         <!-- Select -->
                         <div class="mb-3">
-                          <select class="js-select2-custom custom-select select2-hidden-accessible" size="1" style="opacity: 0;" id="locationLabel" data-hs-select2-options="{
+
+                           <select name="location" class="js-select2-custom custom-select select2-hidden-accessible" size="1" style="opacity: 0;" id="locationLabel" data-hs-select2-options="{
                                     &quot;placeholder&quot;: &quot;Select country&quot;,
                                     &quot;searchInputPlaceholder&quot;: &quot;Search a country&quot;
                                   }" data-select2-id="locationLabel" tabindex="-1" aria-hidden="true">
@@ -584,7 +418,7 @@
                         </div>
                         <!-- End Select -->
 
-                        <div class="mb-3">
+                         <div class="mb-3">
                           <input class="form-control" name="city" id="cityLabel" placeholder="City" aria-label="City" type="text">
                         </div>
 
@@ -618,7 +452,7 @@
                         <div id="addAddressFieldContainer"></div>
 
                         <a href="javascript:;" class="js-create-field form-link btn btn-sm btn-no-focus btn-ghost-primary">
-                          <i class="tio-add"></i> Add address
+                          <!-- <i class="tio-add"></i> Add address -->
                         </a>
                       </div>
                     </div>
@@ -626,18 +460,41 @@
 
                     <!-- Form Group -->
                     <div class="row">
-                      <label for="zipCodeLabel" class="col-sm-3 col-form-label input-label">Zip code <i class="tio-help-outlined text-body ml-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="You can find your code in a postal address."></i></label>
+                      <label for="zipCodeLabel" class="col-sm-3 col-form-label input-label">Zip code <i class="fal fa-question-circle text-body ml-1" data-toggle="tooltip" data-placement="top" title="" data-original-title="You can find your code in a postal address."></i></label>
 
                       <div class="col-sm-9">
-                        <input class="js-masked-input form-control" name="zipCode" id="zipCodeLabel" placeholder="Your zip code" aria-label="Your zip code" data-hs-mask-options="{
-                                 &quot;template&quot;: &quot;AA0 0AA&quot;
-                               }" maxlength="7" type="text">
+                        <input class="js-masked-input form-control" name="zipCode" id="zipCodeLabel" placeholder="Your zip code" aria-label="Your zip code"  type="text">
                       </div>
                     </div>
                     <!-- End Form Group -->
                   </div>
                   <!-- End Body -->
 
+          
+
+                   
+
+                  <!-- Footer -->
+                  <div class="card-footer d-flex justify-content-end align-items-center">
+                  	<button type="submit" name="cat" class="btn btn-primary float-right">Save</button>
+                  		</form>
+                    <!-- <button type="button" class="btn btn-primary" data-hs-step-form-next-options="{
+                              &quot;targetSelector&quot;: &quot;#addUserStepBillingAddress&quot;
+                            }">
+                      Next <i class="tio-chevron-right"></i>
+                    </button> -->
+                  </div>
+                  <!-- End Footer -->
+                </div>
+                <!-- End Card -->
+
+                <div id="addUserStepBillingAddress" class="card card-lg" style="display: none;">
+                  <!-- Body -->
+                  <div class="card-body">
+                
+                         
+
+                       
                   <!-- Footer -->
                   <div class="card-footer d-flex align-items-center">
                     <button type="button" class="btn btn-ghost-secondary" data-hs-step-form-prev-options="{
